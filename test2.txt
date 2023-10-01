@@ -1,0 +1,2 @@
+Plik testowy nr 2
+Next line.
