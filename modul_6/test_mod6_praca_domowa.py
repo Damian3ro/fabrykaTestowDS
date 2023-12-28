@@ -12,10 +12,12 @@ class Tests(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
-    def test1_iframe_click_first_button(self):
+    def test1_iframe_visible(self):
         iframe_page.click_iframe_tab(self.driver)
-        if iframe_page.iframe_content_visible(self.driver):
-            iframe_page.show_whole_iframe_element(self.driver)
-            iframe_page.click_on_button_inside_iframe(self.driver, 1)
+        self.assertTrue(iframe_page.iframe_content_visible(self.driver))
 
+    def test2_iframe_click_first_button(self):
+        iframe_page.click_iframe_tab(self.driver)
+        iframe_page.show_whole_iframe_element(self.driver)
+        self.assertTrue(iframe_page.click_on_button_inside_iframe(self.driver, 1))
         self.driver.save_screenshot('iframe_found_screenshot.png')
