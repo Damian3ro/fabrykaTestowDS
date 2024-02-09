@@ -8,25 +8,25 @@ from selenium.common.exceptions import *
 def hover_over_element_by_id(driver_instance, identity):
     elem = driver_instance.find_element(by=By.ID, value=identity)
     hover = ActionChains(driver_instance).move_to_element(elem)
-    hover.perform()  # najechanie na miejsce, ktore zostalo wskazane
+    hover.perform()
 
 
 def hover_over_element_by_xpath(driver_instance, xpath):
     elem = driver_instance.find_element(by=By.XPATH, value=xpath)
     hover = ActionChains(driver_instance).move_to_element(elem)
-    hover.perform()  # najechanie na miejsce, ktore zostalo wskazane
+    hover.perform()
 
 
 def press_key_on_element_by_id(driver_instance, identity, key):
     elem = driver_instance.find_element(by=By.ID, value=identity)
     press_key = ActionChains(driver_instance).key_down(key, elem)
-    press_key.perform()  # nacisniecie przycisku nad wskazanym miejscem
+    press_key.perform()
 
 
 def release_key_pressed_on_element_by_id(driver_instance, identity, key):
     elem = driver_instance.find_element(by=By.ID, value=identity)
     release_key = ActionChains(driver_instance).key_up(key, elem)
-    release_key.perform()  # zwolnienie przycisku nad wskazanym miejscem
+    release_key.perform()
 
 
 def drag_and_drop_element_by_id(driver_instance, draggable, droppable):

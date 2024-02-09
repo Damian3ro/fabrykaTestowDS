@@ -52,7 +52,7 @@ def convert_month(month):
     return converted_month
 
 
-def converted_date(date_to_convert):
+def convert_date(date_to_convert):
     first_space_index = date_to_convert.find(' ')
     order_year = date_to_convert[-4:]
     if first_space_index == 1:
@@ -74,7 +74,7 @@ def get_current_date():
 def check_order_date(driver_instance):
     wait_for_visibility_of_element_by_xpath(driver_instance, order_date)
     elem = driver_instance.find_element(by=By.XPATH, value=order_date)
-    return converted_date(elem.text)
+    return convert_date(elem.text)
 
 
 def check_order_net_amount(driver_instance):
