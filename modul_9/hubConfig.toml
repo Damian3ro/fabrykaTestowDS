@@ -1,0 +1,6 @@
+[server]
+host = "localhost"
+port = 4444
+timeout = 10000
+platform-name = "Windows"
+max-sessions = 4

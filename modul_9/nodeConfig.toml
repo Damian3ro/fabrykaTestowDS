@@ -1,0 +1,13 @@
+[node]
+driver-implementation = ["chrome"]
+hub = "http://localhost:4444"
+
+[[node.driver-configuration]]
+display-name = "Chrome"
+stereotype = '{"browserName": "chrome"}'
+max-sessions = 4
+
+[[node.driver-configuration]]
+display-name = "Firefox"
+stereotype = '{"browserName": "firefox"}'
+max-sessions = 2
