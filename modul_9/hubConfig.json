@@ -1,0 +1,8 @@
+{
+  "host": "localhost",
+  "port": 4444,
+  "timeout": 10000,
+  "platformName": "Windows",
+  "maxSessions": 4,
+  "role": "hub"
+}

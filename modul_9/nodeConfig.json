@@ -1,0 +1,20 @@
+{
+  "node":
+  {
+    "driver-implementation": ["chrome"],
+    "hub": "http://localhost:4444",
+	"driver-configuration":
+	[
+	  {
+		"display-name": "Chrome",
+	    "stereotype": {"browserName": "chrome"}
+        "max-sessions": 4
+	  },
+	  {
+	    "display-name": "Firefox",
+	    "stereotype": {"browserName": "firefox"}
+        "max-sessions": 2
+	  }
+	]
+  }
+}

@@ -21,3 +21,10 @@ Fabryka Testów - kurs Python + Selenium (TAPS 2.0)
   * testy E2E:
     * przejście całego procesu zakupowego
     * sprawdzenie cen i informacji w podsumowaniu zamówienia
+* moduł 9: Selenium Grid - konfiguracja hub'a i node'a za pomocą plików konfiguracyjnych *.json, *.toml
+  * hub:
+    * java -jar selenium-server-4.17.0.jar hub --config hubConfig.json
+    * java -jar selenium-server-4.17.0.jar hub --config hubConfig.toml
+  * node:
+    * java -jar selenium-server-4.17.0.jar node --config nodeConfig.json
+    * java -jar selenium-server-4.17.0.jar node --config nodeConfig.toml
